@@ -44,7 +44,7 @@
   --fs-2: calc(2.6rem + .66vw);
   --fs-3: calc(2.6rem + .24vw);
   --fs-4: 1.9rem;
-  --fs-5: 1.8rem;
+  --fs-5: 1.6rem;
   --fs-6: 1.7rem;
   --fs-7: 1.5rem;
   --fs-8: 1.4rem;
@@ -55,7 +55,7 @@
    * spacing
    */
 
-  --section-padding: 90px;
+  --section-padding: 40px;
 
   /**
    * box shadow
@@ -175,7 +175,7 @@ body.nav-active { overflow: hidden; }
 
 .social-link:is(:hover, :focus-visible) { transform: translateY(-3px); }
 
-.section { padding-block: var(--section-padding); }
+.section { padding-block: 70px; }
 
 .w-100 { width: 100%; }
 
@@ -215,7 +215,7 @@ body.nav-active { overflow: hidden; }
   color: var(--white);
 }
 
-.section-text { font-size: var(--fs-5); }
+.section-text { font-size: 20px; }
 
 .section-title { margin-block-end: 16px; }
 
@@ -552,7 +552,7 @@ textarea.input-field {
 
 .footer { padding-block: 40px; }
 
-.copyright { margin-block-end: 12px; }
+.copyright { text-align: center !important; }
 
 .footer .social-link { color: var(--charcoal); }
 
@@ -568,6 +568,13 @@ textarea.input-field {
  * responsive for large than 575px screen
  */
 
+ .round-image {
+  width: 360px; /* Match the desired size */
+  height: 360px; /* Make it square */
+  border-radius: 50%; /* This makes it circular */
+  object-fit: cover; /* Ensures the image fits well */
+}
+
 @media (min-width: 575px) {
 
   /**
@@ -579,6 +586,8 @@ textarea.input-field {
     width: 100%;
     margin-inline: auto;
   }
+  .section { padding-block: 90px; }
+  
 
 
 
@@ -612,6 +621,7 @@ textarea.input-field {
    * REUSED STYLE
    */
 
+
   .container { max-width: 720px; }
 
   .section-text { --fs-5: 2rem; }
@@ -631,7 +641,7 @@ textarea.input-field {
    */
 
   .project .title-wrapper {
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     align-items: center;
     gap: 30px;
@@ -660,17 +670,28 @@ textarea.input-field {
    */
 
   .footer .container {
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     align-items: center;
   }
 
-  .copyright { margin-block-end: 0; }
+  .copyright { text-align: center !important; }
 
 }
 
 
 
+@media (max-width:800px) {
+
+  .round-image {
+    width: 260px !important; /* Match the desired size */
+    height: 260px !important; /* Make it square */
+    border-radius: 50%; /* This makes it circular */
+    object-fit: cover; /* Ensures the image fits well */
+    margin-top: 40px;
+  }
+ 
+}
 
 
 /**
@@ -782,7 +803,7 @@ textarea.input-field {
     align-items: center;
   }
 
-  .about .grid-list { grid-template-columns: repeat(4, 1fr); }
+  .about .grid-list { grid-template-columns: repeat(3, 1fr); }
 
 
 
