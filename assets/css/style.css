@@ -85,6 +85,111 @@
 
 
 
+          
+.card-container {
+  display: flex;
+  flex-direction: column;  /* Align cards vertically (one per row) */
+  gap: 20px;
+  justify-content: center;
+  /* max-width: 800px;  Limit width of cards */
+  margin: 0 auto;  /* Center the cards horizontally */
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  width: 100%;  /* Make each card take up full width */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-body {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: flex-start;  /* Align footer links to the left */
+}
+
+.card-footer a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.card-footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* Style for the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+  color: #555;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #8f9397 !important;
+  color: white;
+}
+
+/* Add scroll effect */
+.scrollable-table {
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+/* Optional: Add hover effect for rows */
+tr:hover {
+  background-color: #f1f1f1;
+}
+/* .Upcoming{
+background-color: #e3fc00a9;
+}
+.Upcoming:hover{
+background-color: #e3fc00a9;
+} */
+
+.card-image img {
+  max-width: 100px; /* Size of the image */
+  height: auto;
+  border-radius: 8px;
+}
+
+.image-awards:hover {
+  transform: scale(1.05); /* Slight scaling effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
+}
+
+.image-awards a {
+  display: block; /* Ensures the entire li is clickable */
+  text-decoration: none; /* Remove underline from links */
+}
+
 
 
 /*-----------------------------------*\
@@ -292,7 +397,7 @@ body.nav-active { overflow: hidden; }
   width: 100%;
   height: 100vh;
   padding: 30px;
-  padding-block-end: 40px;
+  padding-block-end: 70px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -332,10 +437,16 @@ body.nav-active { overflow: hidden; }
   padding-block: 6px;
 }
 
-.contact-link { transition: var(--transition-1); }
+.contact-link { 
+  transition: var(--transition-1); 
+  font-size:13px;}
+
 
 .contact-link:is(:hover, :focus-visible) { color: var(--cinnamon-satin); }
-
+.footer{
+  background-color: #7c7c7c;
+  color: rgb(253, 253, 253);
+}
 .overlay {
   position: fixed;
   top: 0;
@@ -457,7 +568,7 @@ body.nav-active { overflow: hidden; }
   #PROJECTS
 \*-----------------------------------*/
 
-.project { border-block: 1px solid var(--cadet-blue-crayola_a20); }
+.project { border-block: 0 solid var(--cadet-blue-crayola_a20); }
 
 .project .title-wrapper { margin-block-end: 40px; }
 

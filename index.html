@@ -5,34 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- 
-    - primary meta tags
-  -->
   <title> Alka Yadav</title>
-  <meta name="title" content="Julia - I'm User Interface Designer & Developer.">
-  <meta name="description" content="This is a personal portfolio html template made by codewithsadee">
+  <meta name="title" content="Alka Yadav - My research focuses on complex systems.">
+  <meta name="description" content="I recently completed my Ph.D. from Jawaharlal Nehru University, New Delhi, in collaboration with the Chennai Mathematical Institute, India. My research focuses on complex systems, with a particular emphasis on climate change and environmental systems. I am passionate about exploring the intricate dynamics of these systems to better understand and address the pressing challenges posed by environmental transformations.">
 
-  <!-- 
-    - favicon
-  -->
-  <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
-
-  <!-- 
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
 
-  <!-- 
-    - custom css link
-  -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- 
-    - preload images
-  -->
   <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
   <link rel="preload" as="image" href="./assets/images/Blog.svg">
 
@@ -43,26 +25,15 @@
 </head>
 
 <body>
-
-  <!-- 
-    - #HEADER
-  -->
-
   <header class="header" data-header>
     <div class="container">
 
       <a href="#" class="logo">
-        <!-- <strong><h1>Welcome</h1></strong> -->
-        <img src="https://appstickers-cdn.appadvice.com/1233527552/822028065/7e87b5ea1a4e8fe62bdace0bca1f48fb-3.png" width="64" height="24" alt="home">
+        <img id='logo-image' src="https://appstickers-cdn.appadvice.com/1233527552/822028065/7e87b5ea1a4e8fe62bdace0bca1f48fb-3.png" width="64" height="24" alt="home">
       </a>
 
       <nav class="navbar" data-navbar>
-
         <div class="navbar-top">
-          <!-- <a href="#" class="logo">
-            <img src="./assets/images/logo-light.svg" width="64" height="24" alt="Julia home">
-          </a> -->
-
           <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
             <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
           </button>
@@ -81,13 +52,11 @@
           <li>
             <a href="#conferences" class="navbar-link">Conferences</a>
           </li>
-
           <li>
-            <a href="https://womaninprocessin.wordpress.com/" class="navbar-link" target="_blank">Blog</a>
+            <a href="#education" class="navbar-link">Education</a>
           </li>
-
           <li>
-            <a href="#contact" class="navbar-link">Contact</a>
+            <a href="https://womaninprocessin.wordpress.com/" class="navbar-link" target="_blank">Blog <i class="fas fa-external-link-alt"></i></a>
           </li>
 
         </ul>
@@ -99,6 +68,12 @@
         </div>
 
         <ul class="social-list">
+
+          <li>
+            <a href="mailto:alkayadav.india@gmail.com"   class="social-link">
+              <i class="fa fa-envelope"></i>
+            </a>
+          </li>
 
           <li>
             <a href="https://scholar.google.com/citations?user=pqWOfucAAAAJ&hl=en" target="_blank" class="social-link">
@@ -145,25 +120,18 @@
   </header>
 
 
-
-
-
   <main>
     <article>
-
-      <!-- 
-        - #HERO
-      -->
-
       <section class="section hero" aria-label="home">
         <div class="container">
 
           <figure class="hero-banner">
             <img src="https://i.imgur.com/iJ0G2Bq.jpg" alt="Alka" class="round-image">
-            <!-- <a href="#conferences"> <p style="text-align: center; padding:10px"> Check Upcoming Events</p></a> -->
 
-            <!-- <img src="./assets/images/hero-shape.svg" width="203" height="91" alt="250+ Projects Done" class="shape"
-              data-reveal="top" data-reveal-delay="0.25s"> -->
+            <p style="font-weight: bold; text-align: center; padding:10px"><i class="fa fa-envelope"></i>   alkayadav.india@gmail.com</p>
+            
+            <a href="#conferences"> <p style="font-weight: bold;  text-align: center;"><img src="./fast-forward.gif" alt="Funny Animated GIF" height="20px" width="20px"  style="display: inline; "/> Check Upcoming Talks!</p></a>
+
           </figure>
 
           <div class="hero-content">
@@ -177,7 +145,7 @@
             </p>
 
             <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
-              <a href="https://drive.google.com/file/d/1ihXMD_P941TcZhjx1TBOrbWcc1JDnyOr/view?usp=drive_link" target="_blank"  class="btn btn-primary" download>Download CV  <i class="fa-solid fa-download"></i>  </a>
+              <a href="https://drive.google.com/file/d/1b8FaNXDu2PuhAzC2w8oreLNTtw9takd5/view?usp=drive_link" target="_blank"  class="btn btn-primary" download>Download CV  <i class="fa-solid fa-download"></i>  </a>
             </div>
             
 
@@ -194,64 +162,7 @@
 
             <div>
               <h2  class="h2 section-title" id="project-label">Research Publications </h2>
-
-
             </div>
-
-            
-            <style>
-      
-          
-              .card-container {
-                display: flex;
-                flex-direction: column;  /* Align cards vertically (one per row) */
-                gap: 20px;
-                justify-content: center;
-                /* max-width: 800px;  Limit width of cards */
-                margin: 0 auto;  /* Center the cards horizontally */
-              }
-          
-              .card {
-                background-color: white;
-                padding: 20px;
-                width: 100%;  /* Make each card take up full width */
-                border-radius: 8px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                transition: transform 0.3s ease;
-              }
-          
-              .card:hover {
-                transform: translateY(-5px);
-              }
-          
-              .card-title {
-                font-weight: bold;
-                margin-bottom: 10px;
-              }
-          
-              .card-body {
-                font-size: 14px;
-                color: #555;
-                margin-bottom: 15px;
-              }
-          
-              .card-footer {
-                display: flex;
-                justify-content: flex-start;  /* Align footer links to the left */
-              }
-          
-              .card-footer a {
-                color: #1a73e8;
-                text-decoration: none;
-                font-size: 14px;
-                font-weight: 600;
-                margin-right: 10px;
-              }
-          
-              .card-footer a:hover {
-                text-decoration: underline;
-              }
-            </style>
           </div>
           <div class="card-container">
             <!-- Card 1 -->
@@ -301,45 +212,6 @@
 
         </div>
       </section>
-
-      <style>
-        /* Style for the table */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            font-family: Arial, sans-serif;
-            color: #555;
-        }
-
-        th, td {
-            padding: 15px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-
-        th {
-            background-color: #D16B86 !important;
-            color: white;
-        }
-
-        /* Add scroll effect */
-        .scrollable-table {
-            max-height: 400px;
-            overflow-y: scroll;
-        }
-
-        /* Optional: Add hover effect for rows */
-        tr:hover {
-            background-color: #f1f1f1;
-        }
-        .Upcoming{
-          background-color: #e3fc00a9;
-        }
-        .Upcoming:hover{
-          background-color: #e3fc00a9;
-        }
-    </style>
       <section id="conferences" class="section project" aria-labelledby="project-label">
         <div class="container">
 
@@ -456,12 +328,66 @@
         </div>
       </section>
 
+      <section id="education" class="section project" aria-labelledby="project-label">
+        <div class="container">
 
+          <div class="title-wrapper" data-reveal="top">
 
-      <!-- 
-        - #ABOUT
-      -->
+            <div>
+              <h2  class="h2 section-title" id="project-label">Education</h2>
 
+            </div> 
+
+            <div class="card-container">
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-title"> Ph.D, Jawaharlal Nehru University (JNU) in collaboration with Chennai Mathematical Institute (CMI)</div>
+                <div class="card-body">
+                  <p><strong>Thesis title:</strong> “Data Science Approaches to Climate Change and Environmental Systems”.</p>
+                  <p><strong>Supervisor:</strong> Prof. Anirban Chakraborti (JNU)</p>
+                  <p><strong>Co-Supervisor:</strong> Dr. Sourish Das (CMI)</p>
+                </div>
+                <!-- <div class="card-image">
+                  <img height="100px" width="100px"  src="https://i.imgur.com/d1M66Ze.jpg" alt="Image" />
+                </div> -->
+                
+                
+              </div>
+          
+              <!-- Card 2 -->
+              <div class="card">
+                <div class="card-title">M.Sc. Physics, University of Delhi, Department of Physics and Astrophysics, India</div>
+                <div class="card-body">
+                </div>
+                <!-- <div class="card-image">
+                  <img height="100px" width="100px" src="https://i.imgur.com/WFnxxbH.jpg" alt="Image" />
+                </div> -->
+              </div>
+              
+              
+          
+              <!-- Card 3 -->
+              <div class="card">
+                <div class="card-title">B.Sc. Physics Honors, Miranda House, University of Delhi, India</div>
+                <div class="card-body">
+                  <!-- <p>Physica A: Statistical Mechanics and its Applications, vol. 627, 2023.</p> -->
+                </div>
+                <!-- <div class="card-image">
+                  <img height="100px" width="100px"  src="https://i.imgur.com/M8wh8k2.png" alt="Image" />
+                </div> -->
+                
+              </div>
+          
+             
+            </div>
+          </div>
+        </div>
+      
+
+       
+      </section>
+  
+ 
       <section class="section about" aria-label="interest">
         <div class="container">
 
@@ -469,11 +395,11 @@
 
           <ul class="grid-list">
 
-            <li data-reveal="bottom" data-reveal-delay="0.25s">
-              <div class="about-card">
+            <li class="image-awards" data-reveal="bottom" data-reveal-delay="0.25s">
+              <a  target="_blank" href="https://dst.gov.in/"><div class="about-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/icon-2.svg" width="52" height="52" loading="lazy" alt="mobile design icon">
+                  <img src="https://i.imgur.com/2pkjnqo.jpg" width="152" height="152" loading="lazy" alt="mobile design icon">
                 </div>
 
                 <h3 class="h4 card-title">Awards and Fellowships</h3>
@@ -483,15 +409,15 @@
                 </p>
                 
 
-              </div>
+              </div></a>
             </li>
   
 
-            <li data-reveal="bottom">
-              <div class="about-card">
+            <li class="image-awards" data-reveal="bottom">
+              <a  target="_blank" href="https://sabudh.org/"><div class="about-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/icon-1.svg" width="52" height="52" loading="lazy" alt="web design icon">
+                  <img src="https://i.imgur.com/yj6mTZL.png" width="152" height="152" loading="lazy" alt="web design icon">
                 </div>
 
                 <h3 class="h4 card-title">Sabudh Foundation (NGO)</h3>
@@ -500,14 +426,14 @@
                   I am the <strong>Manager of Learning</strong> at Sabudh Foundation, where I design and lead educational initiatives to empower individuals with advanced skills in data science, AIoT, and analytics. 
                 </p>
                 
-              </div>
+              </div></a>
             </li>
 
-            <li data-reveal="bottom" data-reveal-delay="0.75s">
-              <div class="about-card">
+            <li class="image-awards" data-reveal="bottom" data-reveal-delay="0.75s">
+              <a   target="_blank" href="https://www.dhamma.org/en/index"><div class="about-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/icon-4.svg" width="52" height="52" loading="lazy" alt="web seo icon">
+                  <img src="https://i.imgur.com/fQ6k73W.png"  width="152" height="152" loading="lazy" alt="web seo icon">
                 </div>
 
                 <h3 class="h4 card-title">Yoga and Meditation</h3>
@@ -517,19 +443,13 @@
                  </p>
                 
 
-              </div>
+              </div></a>
             </li>
 
           </ul>
 
         </div>
       </section>
-
-
-
-      <!-- 
-        - #CONTACT
-      -->
 
 
     </article>
@@ -540,10 +460,12 @@
 
   <footer id="contact" class="footer">
     <div class="container">
-      <hr><br>
 
-      <p style="display:block; font-size: 20px;" class="copyright">
-        <a href="mailto:info@email.com" class="contact-link">Contact : alkayadav.india@gmail.com</a>
+      <p style="display:block; font-size: 20px !important;" class="copyright">
+        © 2024 Alka. All rights reserved.
+
+
+        <strong><a href="#top" class="footer-link">Back to Top </a></strong>
      
       </p>
 
@@ -557,6 +479,19 @@
   <!-- 
     - ionicon link
   -->
+  <script>
+    window.addEventListener('scroll', function() {
+      var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+      // console.log(scrollPosition)
+      var targetElement = document.getElementById('logo-image');
+      
+      if (scrollPosition < 700) {  // Set your scroll length threshold here
+        targetElement.style.opacity = 1;  // Example CSS change
+      } else {
+        targetElement.style.opacity = 0;  // Reset the background color
+      }
+    });
+  </script>
   
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
