@@ -21,6 +21,7 @@ const addEventOnElements = function (elements, eventType, callback) {
 const navbar = document.querySelector("[data-navbar]");
 const navTogglers = document.querySelectorAll("[data-nav-toggler]");
 const overlay = document.querySelector("[data-overlay]");
+const navbarLinks = document.querySelectorAll(".navbar-link"); // Select all links inside the navbar
 
 const toggleNavbar = function () {
   navbar.classList.toggle("active");
@@ -29,8 +30,40 @@ const toggleNavbar = function () {
 }
 
 addEventOnElements(navTogglers, "click", toggleNavbar);
+// Close navbar when any link is clicked
+addEventOnElements(navbarLinks, "click", function () {
+  if (navbar.classList.contains("active")) {
+    toggleNavbar();
+  }
+});
 
+// const navbar = document.querySelector("[data-navbar]");
+// const navTogglers = document.querySelectorAll("[data-nav-toggler]");
+// const overlay = document.querySelector("[data-overlay]");
+// const navbarLinks = document.querySelectorAll(".navbar-link"); // Select all links inside the navbar
 
+// const toggleNavbar = function () {
+//   navbar.classList.toggle("active");
+//   overlay.classList.toggle("active");
+//   document.body.classList.toggle("nav-active");
+// };
+
+// // Attach the toggleNavbar function to navbar togglers
+// addEventOnElements(navTogglers, "click", toggleNavbar);
+
+// // Close navbar when any link is clicked
+// addEventOnElements(navbarLinks, "click", function () {
+//   if (navbar.classList.contains("active")) {
+//     toggleNavbar();
+//   }
+// });
+
+// // Custom utility function to add event listeners to multiple elements
+// function addEventOnElements(elements, eventType, callback) {
+//   elements.forEach((element) => {
+//     element.addEventListener(eventType, callback);
+//   });
+// }
 
 /**
  * HEADER
