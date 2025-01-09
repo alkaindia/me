@@ -55,7 +55,7 @@
    * spacing
    */
 
-  --section-padding: 40px;
+  --section-padding: 20px;
 
   /**
    * box shadow
@@ -280,7 +280,7 @@ body.nav-active { overflow: hidden; }
 
 .social-link:is(:hover, :focus-visible) { transform: translateY(-3px); }
 
-.section { padding-block: 70px; }
+.section { padding-block: 30px; }
 
 .w-100 { width: 100%; }
 
@@ -697,7 +697,7 @@ textarea.input-field {
     width: 100%;
     margin-inline: auto;
   }
-  .section { padding-block: 90px; }
+  /* .section { padding-block: 90px; } */
   
 
 
