@@ -1031,3 +1031,12 @@ textarea.input-field {
 
 }
 
+/* Prevent line breaks and keep links inline */
+p a {
+  display: inline !important;
+}
+
+p a span {
+  display: inline !important;
+}
+
